@@ -14,6 +14,11 @@ flex-direction: column;
 
 const StyledText = styled.p`
 color: ${colors.secondary};
+margin: 30px 0px 30px 0px;
+font-size: 24px;
+@media (max-width: 768px){
+    font-size: 12px;
+  } 
 `
 
 const StyledLogo = styled.img`
