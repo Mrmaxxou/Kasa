@@ -2,6 +2,9 @@ import styled from 'styled-components'
 import colors from '../../utils/style/colors'
 import { StyledLink404 } from '../../utils/style/link'
 
+// CSS Error //
+// ----------------------------------------------------------------- //
+
 const StyledBlock = styled.div`
 margin: 0px 100px 0px 100px;
 display: flex;
@@ -32,6 +35,8 @@ const StyledTextp = styled.p`
         font-size: 18px;
       } 
 `
+
+// ----------------------------------------------------------------- //
 
 function Error(){
     return (
