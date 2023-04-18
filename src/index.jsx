@@ -11,11 +11,14 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Error from './components/Error';
 
+import GlobalStyle from './utils/style/GlobalStyle'
+
 import {BrowserRouter as Router, Route, Switch} from'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <GlobalStyle />
     <Router>
       <Header />
         <Switch>
