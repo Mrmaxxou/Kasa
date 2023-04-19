@@ -1,9 +1,15 @@
+import React from 'react';
+
 import styled from 'styled-components'
 import Background from '../../assets/banners-home.jpg'
 import colors from '../../utils/style/colors'
 import Card from '../../components/Card'
 
-import DataLogements from '../../Datas/logements.json'
+
+
+
+
+
 
 
 
@@ -59,20 +65,22 @@ const StyledTexth1 = styled.h1`
 `
 
 const StyledBlockCard = styled.div`
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   background-color: ${colors.backgroundBlockCard};
   border-radius: 25px;
   margin-top: 40px;
   padding: 31px 0px 31px 0px;
   @media (max-width: 768px){
     background-color: transparent;
+    margin-top: 20px;
+    padding: 0px;
   } 
 `
 // ----------------------------------------------------------------- //
 
+
+
 function Home(){
+  
   return (
   <StyledHome>
     <StyledBanner>
@@ -80,14 +88,8 @@ function Home(){
       <StyledTexth1>Chez vous, partout et ailleurs</StyledTexth1>
     </StyledBanner>
     <StyledBlockCard>
-      {DataLogements.map((profile, index) => (
-        <Card
-          key={`${profile.id}-${index}`}
-          title={profile.title}
-          cover= {profile.cover} />
-      ))}  
+        <Card />
     </StyledBlockCard>
-
   </StyledHome>)
 }
 

@@ -1,9 +1,19 @@
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
 
+import DataLogements from '../../Datas/logements.json'
+import {Link} from 'react-router-dom'
+
 // CSS Header //
 // ----------------------------------------------------------------- //
+
+const StyledBlock = styled.div`
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 100%;
+`
+
 
 const StyledBlockCard = styled.div`
     position: relative;
@@ -18,6 +28,7 @@ const StyledBlockCard = styled.div`
     @media (max-width: 768px){
         width: 335px;
         height: 255px;
+        margin: 10px 0px 10px 0px;
     } 
 `
 
@@ -25,7 +36,7 @@ const StyledBackgroundCard = styled.div`
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -54,19 +65,26 @@ const Styledcover = styled.img`
 
 // ----------------------------------------------------------------- //
 
-function Card({title, cover}){
+function Card(){
     return (
-        <StyledBlockCard>
-            <StyledBackgroundCard></StyledBackgroundCard>
-            <StyledTitle>{title}</StyledTitle>    
-            <Styledcover src={cover} alt={title}/>
-        </StyledBlockCard>
-    )
-}
+        <StyledBlock >
+            {DataLogements.map((data)=>{
+                const {id, cover, title} = data;
 
-Card.propTypes = {
-    title: PropTypes.string.isRequired,
-    cover: PropTypes.string.isRequired
+            return (
+                <StyledBlockCard>
+                <Link to={{pathname: "/logement/", search: "?id="+id}}>
+                    <StyledBackgroundCard></StyledBackgroundCard>
+                    <StyledTitle>{title}</StyledTitle>    
+                    <Styledcover src={cover} alt={title}/>
+                </Link>
+                </StyledBlockCard>
+            )
+        
+            })}
+        </StyledBlock>       
+
+    )
 }
 
 export default Card;

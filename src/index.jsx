@@ -28,7 +28,7 @@ root.render(
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/logement">
+          <Route path="/logement/:id?">
             <Logement />
           </Route>
           <Route path="/propos">
