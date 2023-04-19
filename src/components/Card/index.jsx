@@ -1,11 +1,10 @@
 //import colors from '../../utils/style/colors'
+//import styled from 'styled-components'
 
-function Card({title, picture}){
+function Card(){
     return (
-        <div>
-            <h3>Titre de la location</h3>
-        </div>
+        <h2> Cards</h2>
     )
 }
 
-export default Card;
+export default Card

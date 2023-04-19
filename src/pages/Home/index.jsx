@@ -55,6 +55,16 @@ const StyledTexth1 = styled.h1`
     padding: 20px 100px 20px 16px;
   } 
 `
+
+const StyledBlockCard = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: ${colors.backgroundBlockCard};
+  border-radius: 25px;
+  margin-top: 40px;
+  padding: 31px 0px 31px 0px;
+`
 // ----------------------------------------------------------------- //
 
 function Home(){
@@ -64,9 +74,9 @@ function Home(){
       <StyledBackgroundImg></StyledBackgroundImg>
       <StyledTexth1>Chez vous, partout et ailleurs</StyledTexth1>
     </StyledCardh1>
-    <div>
+    <StyledBlockCard>
       <Card/>
-    </div>
+    </StyledBlockCard>
 
   </StyledHome>)
 }
