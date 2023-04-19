@@ -21,7 +21,7 @@ const StyledHome = styled.section`
 
 `
 
-const StyledCardh1 = styled.div`
+const StyledBanner = styled.div`
 position: relative;  
 background: url(${Background}) center no-repeat;
 background-size: cover;
@@ -75,10 +75,10 @@ const StyledBlockCard = styled.div`
 function Home(){
   return (
   <StyledHome>
-    <StyledCardh1>
+    <StyledBanner>
       <StyledBackgroundImg></StyledBackgroundImg>
       <StyledTexth1>Chez vous, partout et ailleurs</StyledTexth1>
-    </StyledCardh1>
+    </StyledBanner>
     <StyledBlockCard>
       {DataLogements.map((profile, index) => (
         <Card
