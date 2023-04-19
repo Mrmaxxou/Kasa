@@ -3,6 +3,8 @@ import Background from '../../assets/banners-home.jpg'
 import colors from '../../utils/style/colors'
 import Card from '../../components/Card'
 
+import DataLogements from '../../Datas/logements.json'
+
 
 
 // CSS Home //
@@ -64,6 +66,9 @@ const StyledBlockCard = styled.div`
   border-radius: 25px;
   margin-top: 40px;
   padding: 31px 0px 31px 0px;
+  @media (max-width: 768px){
+    background-color: transparent;
+  } 
 `
 // ----------------------------------------------------------------- //
 
@@ -75,7 +80,12 @@ function Home(){
       <StyledTexth1>Chez vous, partout et ailleurs</StyledTexth1>
     </StyledCardh1>
     <StyledBlockCard>
-      <Card/>
+      {DataLogements.map((profile, index) => (
+        <Card
+          key={`${profile.id}-${index}`}
+          title={profile.title}
+          cover= {profile.cover} />
+      ))}  
     </StyledBlockCard>
 
   </StyledHome>)

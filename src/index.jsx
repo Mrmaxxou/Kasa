@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+
 // Importation des éléments du dossier "pages"
 import Home from './pages/Home';
 import Propos from './pages/Propos';
@@ -14,6 +15,8 @@ import Error from './components/Error';
 import GlobalStyle from './utils/style/GlobalStyle'
 
 import {BrowserRouter as Router, Route, Switch} from'react-router-dom';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
