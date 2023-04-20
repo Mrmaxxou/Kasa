@@ -59,8 +59,6 @@ const Styledcover = styled.img`
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
-    
-    
 `
 
 // ----------------------------------------------------------------- //
