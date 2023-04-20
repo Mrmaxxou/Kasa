@@ -8,10 +8,10 @@ import {Link} from 'react-router-dom'
 // ----------------------------------------------------------------- //
 
 const StyledBlock = styled.div`
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
 `
 
 
@@ -72,7 +72,7 @@ function Card(){
                 const {id, cover, title} = data;
 
             return (
-                <StyledBlockCard>
+                <StyledBlockCard key={id}>
                 <Link to={{pathname: "/logement/", search: "?id="+id}}>
                     <StyledBackgroundCard></StyledBackgroundCard>
                     <StyledTitle>{title}</StyledTitle>    

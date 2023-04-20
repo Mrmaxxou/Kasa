@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 
 // Importation des éléments du dossier "pages"
 import Home from './pages/Home';
-import Propos from './pages/Propos';
+import About from './pages/About';
 import Logement from './pages/Logement';
 
 // Importation des éléments du dossier "components"
@@ -15,8 +15,6 @@ import Error from './components/Error';
 import GlobalStyle from './utils/style/GlobalStyle'
 
 import {BrowserRouter as Router, Route, Switch} from'react-router-dom';
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,7 +30,7 @@ root.render(
             <Logement />
           </Route>
           <Route path="/propos">
-            <Propos />
+            <About />
           </Route>
           <Route>
             <Error />
@@ -40,6 +38,5 @@ root.render(
         </Switch>
       <Footer />
     </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );

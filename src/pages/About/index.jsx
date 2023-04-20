@@ -1,8 +1,8 @@
-function Propos(){
+function About(){
     return (
         <h1>A Propos</h1>
     )
 
 }
 
-export default Propos
+export default About
