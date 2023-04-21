@@ -25,7 +25,7 @@ const StyledCollapseTitled = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 5px 0px 5px 0px;
     background-color: ${colors.primary};
     border-radius: 5px;
 `
@@ -34,7 +34,7 @@ const StyledTexth3 = styled.h3`
     font-size: 24px;
     font-weight: 500;
     color: ${colors.secondary};
-    margin: 7px 0px 7px 18px;
+    margin: 0px 0px 0px 18px;
     @media (max-width: 768px){
         font-size: 13px;
       } 
@@ -42,10 +42,10 @@ const StyledTexth3 = styled.h3`
 `
 
 const Styledimg = styled.img`
-    margin: 8px 17px 0px 0px;
-    width: 1.3em;
+    margin: 0px 17px 0px 0px;
+    width: 1.1em;
     filter: invert(87%) sepia(99%) saturate(0%) hue-rotate(183deg) brightness(200%) contrast(97%);
-    rotate: 90deg;
+    rotate: 180deg;
     cursor: pointer;
     transform: ${({collapsed}) => (collapsed? 'rotate(180deg)' : 'rotate(0deg)')};
     transition: transform 0,2s ease-in-out;
