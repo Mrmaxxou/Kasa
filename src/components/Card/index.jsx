@@ -13,8 +13,6 @@ const StyledBlock = styled.div`
     justify-content: space-around;
     width: 100%;
 `
-
-
 const StyledBlockCard = styled.div`
     position: relative;
     width: 340px;
@@ -31,7 +29,6 @@ const StyledBlockCard = styled.div`
         margin: 10px 0px 10px 0px;
     } 
 `
-
 const StyledBackgroundCard = styled.div`
     position: absolute;
     bottom: 0;
@@ -42,7 +39,6 @@ const StyledBackgroundCard = styled.div`
     z-index: 1;
     border-radius: 10px;
 `
-
 const StyledTitle = styled.h2`
     position: absolute;
     bottom: 15px;
@@ -53,36 +49,31 @@ const StyledTitle = styled.h2`
     font-weight: 500;
     z-index: 1;
 `
-
 const Styledcover = styled.img`
     width: 100%;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
+    
+    
 `
 
 // ----------------------------------------------------------------- //
 
-function Card(){
+function Card() {
     return (
-        <StyledBlock >
-            {DataLogements.map((data)=>{
-                const {id, cover, title} = data;
-
-            return (
-                <StyledBlockCard key={id}>
-                <Link to={{pathname: "/logement/", search: "?id="+id}}>
-                    <StyledBackgroundCard></StyledBackgroundCard>
-                    <StyledTitle>{title}</StyledTitle>    
-                    <Styledcover src={cover} alt={title}/>
-                </Link>
+        <StyledBlock>
+            {DataLogements.map((data) => (
+                <StyledBlockCard key={data.id}>
+                    <Link to={{pathname: "/logement/", search: "?id=" + data.id}}>
+                        <StyledBackgroundCard></StyledBackgroundCard>
+                        <StyledTitle>{data.title}</StyledTitle>
+                        <Styledcover src={data.cover} alt={data.title} />
+                    </Link>
                 </StyledBlockCard>
-            )
-        
-            })}
-        </StyledBlock>       
-
-    )
+            ))}
+        </StyledBlock>
+    );
 }
 
 export default Card;
