@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import colors from '../../utils/style/colors'
+import colors from '../../utils/colors'
 import Logo from '../../assets/Logo.png'
 
 // CSS Footer //

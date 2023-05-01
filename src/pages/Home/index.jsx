@@ -3,7 +3,7 @@ import Banner from '../../components/Banner'
 import BannerHome from '../../assets/banners-home.jpg'
 
 import styled from 'styled-components'
-import colors from '../../utils/style/colors'
+import colors from '../../utils/colors'
 import Card from '../../components/Card'
 
 // CSS Home //

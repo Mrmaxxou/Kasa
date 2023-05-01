@@ -4,7 +4,7 @@ import React, {useState, useEffect} from "react";
 import styled from 'styled-components'
 import IconCollapse from '../../assets/arrow_back_ios.svg'
 
-import colors from '../../utils/style/colors'
+import colors from '../../utils/colors'
 
 // CSS Collapse //
 

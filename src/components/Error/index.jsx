@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import colors from '../../utils/style/colors'
-import { StyledLink404 } from '../../utils/style/link'
+import colors from '../../utils/colors'
+import { StyledLink404 } from '../../utils/link'
 
 // CSS Error //
 // ----------------------------------------------------------------- //

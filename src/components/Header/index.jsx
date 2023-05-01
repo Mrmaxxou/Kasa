@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Logo from '../../assets/Logo.png'
-import { StyledLink } from '../../utils/style/link'
+import { StyledLink } from '../../utils/link'
 
 // CSS Header //
 // ----------------------------------------------------------------- //
