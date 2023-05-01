@@ -1,0 +1,186 @@
+.block-logement{
+
+    display: flex;
+    flex-direction: column;
+    margin : 0px 100px 0px 100px;
+
+}
+
+.block-description{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.block-description-tilte{
+
+    width: 70%;
+}
+
+
+.block-name-rate{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.block-name{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.block-name-text{
+
+    color: var(--primary);
+    margin-right: 10px;
+    width: 50%;
+    text-align: end;
+}
+
+.block-name-picture{
+
+    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+}
+
+.block-rate{
+
+    margin-top: 27px;
+
+}
+
+.block-collapse{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+
+}
+
+.block-listequipment {
+
+    list-style-type: none;
+}
+
+.logement-title{
+
+    color: var(--primary);
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.logement-text {
+
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.container-tags{
+
+    margin-top: 20px;
+    
+}
+
+.groupe-tags{
+
+    list-style-type: none;
+    display: flex;
+    
+    
+}
+
+.tags__style{
+
+    font-size: 14px;
+    font-weight: 500;
+    border: solid 1px var(--primary);
+    border-radius: 10px;
+    padding: 2px 30px 2px 30px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin-right: 10px;
+    
+
+}
+
+
+@media (max-width: 768px) {
+
+    .block-logement {
+
+      margin: 0px 20px 0px 20px;
+
+    }
+
+    .block-description{
+
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .block-name-rate{
+
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin: 16px 0px 0px 0px;
+    }
+
+    .logement-title{
+
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .logement-text{
+
+        font-size: 14px;
+    }
+
+    .groupe-tags{
+        flex-wrap: wrap;
+    }
+
+    .tags__style{
+
+        font-size: 10px;
+        padding: 2px 25px 2px 25px;
+        margin-right: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+    
+    }
+
+    .container-tags{
+
+        margin-top: 10px;
+    }
+
+    .block-name-text{
+
+        font-size: 12px;
+    }
+
+    .block-name-picture{
+
+        width: 32px;
+        height: 32px;
+    }
+
+    .block-collapse{
+
+        flex-direction: column;
+    }
+
+    .block-rate{
+
+        margin-top: 0px;
+    }
+    
+  }
+       
