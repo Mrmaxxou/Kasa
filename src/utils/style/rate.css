@@ -1,0 +1,15 @@
+.star{
+
+    margin-left: 15px;
+}
+
+@media (max-width: 768px){
+
+.star{
+
+    margin-left: 6px;
+    width: 13px;
+    height: 13px;
+}
+
+}
