@@ -1,40 +1,14 @@
-import styled from 'styled-components'
-import colors from '../../utils/colors'
 import Logo from '../../assets/Logo.png'
 
-// CSS Footer //
-// ----------------------------------------------------------------- //
+import '../../utils/style/footer.css'
 
-const StyledFooter = styled.footer`
-display: flex;
-background-color: ${colors.tertiary};
-align-items: center;
-flex-direction: column;
-`
-
-const StyledText = styled.p`
-color: ${colors.secondary};
-margin: 30px 0px 30px 0px;
-font-size: 24px;
-@media (max-width: 768px){
-    font-size: 12px;
-  } 
-`
-
-const StyledLogo = styled.img`
-width: 122px;
-margin: 66px 0px 15px 0px;
-filter: invert(87%) sepia(99%) saturate(0%) hue-rotate(183deg) brightness(200%) contrast(97%);
-`
-
-// ----------------------------------------------------------------- //
 
 function Footer() {
      return (
-        <StyledFooter>
-            <StyledLogo src={Logo} alt="Logo société Kasa"/>
-            <StyledText> © 2020 Kasa. All rights reserved</StyledText>
-        </StyledFooter>
+        <footer>
+            <img className="footer-logo" src={Logo} alt="Logo société Kasa"/>
+            <p className="footer-text"> © 2020 Kasa. All rights reserved</p>
+        </footer>
      )
 }
 

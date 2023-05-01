@@ -1,0 +1,33 @@
+footer{
+
+    display: flex;
+    background-color: var(--tertiary) ;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.footer-text {
+
+    color: var(--secondary);
+    margin: 30px 0px 30px 0px;
+    font-size: 24px;
+}
+
+.footer-logo {
+
+    width: 122px;
+    margin: 66px 0px 15px 0px;
+    filter: invert(87%) sepia(99%) saturate(0%) hue-rotate(183deg) brightness(200%) contrast(97%);
+
+}
+
+
+@media (max-width: 768px){
+    
+   .footer-text {
+        font-size: 12px;
+    } 
+    
+    
+}
