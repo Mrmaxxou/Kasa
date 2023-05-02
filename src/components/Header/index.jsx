@@ -1,11 +1,16 @@
+// Import du composant Link du module react-router-dom
 import { Link } from 'react-router-dom'
+
+// Import du logo kasa
 import Logo from '../../assets/Logo.png'
+
+// Import du composant StyledLink
 import { StyledLink } from '../../utils/link'
 
-// Import header.css
+// Import du fichier style css
 import '../../utils/style/header.css'
 
-
+// Création d'un composant React "Header" 
 function Header() {
     return (
         <header>
@@ -20,4 +25,5 @@ function Header() {
     )
 }
 
+// Export de la fontion Header
 export default Header;
