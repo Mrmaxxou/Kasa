@@ -1,8 +1,10 @@
-import Logo from '../../assets/Logo.png'
-
+// Import du fichier style css
 import '../../utils/style/footer.css'
 
+// Import du logo kasa
+import Logo from '../../assets/Logo.png'
 
+// Création d'un composant React "Footer" 
 function Footer() {
      return (
         <footer>
@@ -12,4 +14,5 @@ function Footer() {
      )
 }
 
+// Export de la fontion Footer
 export default Footer
