@@ -5,7 +5,7 @@ import React, {useState} from "react";
 import '../../utils/style/collapse.css';
 import IconCollapse from '../../assets/arrow_back_ios.svg'
 
-// Création d'un composant React "Collapse" 
+// Création d'un composant React "Collapse" avec des paramètres "title", "text", "collapseClass"
 function Collapse({ title, text, collapseClass }) {
   // Initilisation de l'état "collapse"
     const [collapsed, setCollapsed] = useState(false);
