@@ -1,8 +1,9 @@
+// Import du fichier style css
 import '../../utils/style/error.css'
-
+// Import du composant StyledLink404
 import { StyledLink404 } from '../../utils/link'
 
-
+// Création d'un composant React "Error" 
 function Error(){
     return (
         <div className="container-error">
@@ -13,4 +14,5 @@ function Error(){
     )
 }
 
+// Export de la fontion Error
 export default Error
