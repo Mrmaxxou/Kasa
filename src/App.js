@@ -1,16 +1,18 @@
+// Import des composants utile de react-router-dom
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 
 
-// Importation des éléments du dossier "pages"
+// Importation des pages "Home", "About" & "Logement"
 import Home from './pages/Home';
 import About from './pages/About';
 import Logement from './pages/Logement';
 
-// Importation des éléments du dossier "components"
+// Importation des composants "Header", "Footer" & "Error"
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Error from './components/Error';
 
+// Création d'un composant React "App" (Définition des Routes)
 function App() {
 
     return(
@@ -36,4 +38,5 @@ function App() {
     )
 }
 
+// Export de la fontion App
 export default App
