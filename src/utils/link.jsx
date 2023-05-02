@@ -1,6 +1,9 @@
+// Import du composant Link du module react-router-dom
+// Import de Styled du module styled components
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 
+// Import des style css
 import './style/index.css'
 
 export const StyledLink = styled(Link)`
