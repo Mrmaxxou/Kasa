@@ -1,5 +1,7 @@
+// Import du fichier style css
 import '../../utils/style/banner.css'
 
+// Création d'un composant React "Banner" avec des props en paramètres
 function Banner(props){
   return (
     <div className={props.bannerClass}>
@@ -9,4 +11,5 @@ function Banner(props){
   )
 }
 
+// Export de la fontion Banner
 export default Banner
