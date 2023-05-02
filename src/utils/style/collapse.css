@@ -28,8 +28,6 @@
 
 .collapse-title{
 
-    font-size: 18px;
-    font-weight: 500;
     color: var(--secondary);
     margin: 0px 0px 0px 18px;
     padding: 13px 0px 13px 0px;
@@ -89,7 +87,7 @@
 .collapse-title{
 
     padding: 6px 0px 6px 0px;
-    font-size: 13px;
+
 }
 
 .collapse-backgroundtext{

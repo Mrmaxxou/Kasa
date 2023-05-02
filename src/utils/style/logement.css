@@ -67,17 +67,22 @@
     list-style-type: none;
 }
 
+.block-listequipment li{
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .logement-title{
 
     color: var(--primary);
     font-size: 36px;
-    font-weight: 500;
 }
 
 .logement-text {
 
     color: var(--primary);
-    font-size: 18px;
+
 }
 
 .container-tags{
@@ -97,7 +102,6 @@
 .tags__style{
 
     font-size: 14px;
-    font-weight: 500;
     border: solid 1px var(--primary);
     border-radius: 10px;
     padding: 2px 30px 2px 30px;
@@ -135,6 +139,11 @@
 
         font-size: 18px;
         margin: 0;
+    }
+
+    .block-listequipment li{
+
+        font-size: 12px;
     }
 
     .logement-text{

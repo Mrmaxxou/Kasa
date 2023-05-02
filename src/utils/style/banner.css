@@ -73,8 +73,8 @@
     border-radius: 10px;
 }
 
-h1{
-    font-size: 24px !important;
+.container-banner-title{
+    font-size: 24px ;
     margin-left: 20px;
 }
     

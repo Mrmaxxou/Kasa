@@ -62,18 +62,26 @@
     .block-img {
 
       height: 255px;
+      border-radius: 10px;
 
     }
 
     .block-Previous,
     .block-Next {
-      width: 50px;
-      height: 50px;
-      position: absolute;
-      cursor: pointer;
-      top: 40%;
-      filter: invert(87%) sepia(99%) saturate(0%) hue-rotate(183deg) brightness(200%) contrast(97%);
-      z-index: 1;
+      width: 20px;
+      height: 12px;
+
+    }
+
+    .block-Previous {
+      left: 5px;
+
+      
+    }
+    
+    .block-Next {
+      right: 5px;
+
     }
 
     .bullet-points{
