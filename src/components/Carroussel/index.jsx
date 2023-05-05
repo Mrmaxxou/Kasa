@@ -32,14 +32,26 @@ function Carousel ({logementId}) {
     // Définition des deux fonction qui mettent à jour l'état index en fonction du bouton cliqué si il est encore possible de cliquer dessus
     function nextClick(){
         if (stopNext){
-            setIndex(index + 1);
+            if (index === pictures.length -1){
+                setIndex(0)
+            } else {
+                setIndex(index + 1)
+            }
+        } else {
+            setIndex(0)
         }
         
     }
 
     function previousClick() {
-        if (stopPrev){
-            setIndex(index - 1);
+        if (stopPrev) {
+            if (index === 0) {
+                setIndex(pictures.length - 1);
+            } else {
+                setIndex(index - 1);
+            }
+        } else {
+            setIndex(pictures.length -1)
         }
     }
 
